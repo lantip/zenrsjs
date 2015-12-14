@@ -1,4 +1,9 @@
 {
+  "applications": {
+    "gecko": {
+      "id": "oebah@edjaan"
+    }
+  },
   "name": "JangTakMati",
   "version": "1.0",
   "description": "Extensi Chrome oentoek mengembalikan kedjajaan edjaan lama",
