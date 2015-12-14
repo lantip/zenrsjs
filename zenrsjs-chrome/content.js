@@ -22,22 +22,26 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
             if(rem.length) $(rem).remove();
         });
     };
+    var elementsArray = ['p','h1','h2','h3','h4','h5','h6','li','td','dt','blockquote','pre'];
+    var arrayLength = elementsArray.length;
     var t = setTimeout(function(){
         try {
-        $('body').find('p').replaceText('u','oe');
-        $('body').find('p').replaceText('j','dj');
-        $('body').find('p').replaceText('y','j');
-        $('body').find('p').replaceText('c','tj');
-        $('body').find('p').replaceText('kh','ch');
-        $('body').find('p').replaceText('U','Oe');
-        $('body').find('p').replaceText('J','Dj');
-        $('body').find('p').replaceText('Y','J');
-        $('body').find('p').replaceText('C','Tj');
-        $('body').find('p').replaceText('KH','Ch');
+            for (var i = 0; i < arrayLength; i++) {
+                $('body').find(elementsArray[i]).replaceText('u','oe');
+                $('body').find(elementsArray[i]).replaceText('j','dj');
+                $('body').find(elementsArray[i]).replaceText('y','j');
+                $('body').find(elementsArray[i]).replaceText('c','tj');
+                $('body').find(elementsArray[i]).replaceText('kh','ch');
+                $('body').find(elementsArray[i]).replaceText('U','Oe');
+                $('body').find(elementsArray[i]).replaceText('J','Dj');
+                $('body').find(elementsArray[i]).replaceText('Y','J');
+                $('body').find(elementsArray[i]).replaceText('C','Tj');
+                $('body').find(elementsArray[i]).replaceText('KH','Ch');
+            }
         }
         catch(err) {
             console.log(err.message);
         }
-    }, 500);
+    }, 200);
   }
 });
