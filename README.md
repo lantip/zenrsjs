@@ -13,13 +13,13 @@ Djika kowe menghendaki sitoes jang berbahasa tempo doeloe, lakoekan langkah beri
 - `git clone https://github.com/lantip/zenrsjs.git`
 - boekalah `chrome://extensions` di browser google chrome kamoe, laloe centang ataoe aktifkan Developer Mode
 - klik `Load unpacked extension...` maka ianja akan memboeka jendela oentoek memilih berkas.
-- pilih folder hasil _git clone_ tadi (`zenrs.js`) laloe klik tombol `select`
+- pilih folder hasil _git clone_ tadi (`zenrs.js/zenrsjs-chrome/`) laloe klik tombol `select`
 - ekstension soedah terinstall dan aktif. di menoe bar akan moentjoel tombol `JTM`, klik tombol ini pada halaman jang ingin kowe oebah gaja bahasanja.
 
 ### Firefox
 
 - `git clone https://github.com/lantip/zenrsjs.git`
-- boekalah folder zenrsjs dan pilih semoea files. Laloe boeat menjadi .zip
+- boekalah folder zenrsjs dan pilih folder `zenrsjs-firefox`. Laloe boeat menjadi .zip
 - oebah 'Archive.zip' menjadi 'Archive.xpi'
 - boekalah `about:addons` di browser firefox kamoe, laloe tarik dan lepas (Drag and Drop) file tadi ke dalam halaman
 - klik `Install`

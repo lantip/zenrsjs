@@ -22,15 +22,22 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
             if(rem.length) $(rem).remove();
         });
     };
-    $('body').replaceText('u','oe');
-    $('body').replaceText('j','dj');
-    $('body').replaceText('y','j');
-    $('body').replaceText('c','tj');
-    $('body').replaceText('kh','ch');
-    $('body').replaceText('U','Oe');
-    $('body').replaceText('J','Dj');
-    $('body').replaceText('Y','J');
-    $('body').replaceText('C','Tj');
-    $('body').replaceText('KH','Ch');
+    var t = setTimeout(function(){
+        try {
+        $('body').find('p').replaceText('u','oe');
+        $('body').find('p').replaceText('j','dj');
+        $('body').find('p').replaceText('y','j');
+        $('body').find('p').replaceText('c','tj');
+        $('body').find('p').replaceText('kh','ch');
+        $('body').find('p').replaceText('U','Oe');
+        $('body').find('p').replaceText('J','Dj');
+        $('body').find('p').replaceText('Y','J');
+        $('body').find('p').replaceText('C','Tj');
+        $('body').find('p').replaceText('KH','Ch');
+        }
+        catch(err) {
+            console.log(err.message);
+        }
+    }, 500);
   }
 });
