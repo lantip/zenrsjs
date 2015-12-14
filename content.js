@@ -27,5 +27,10 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
     $('body').replaceText('y','j');
     $('body').replaceText('c','tj');
     $('body').replaceText('kh','ch');
+    $('body').replaceText('U','Oe');
+    $('body').replaceText('J','Dj');
+    $('body').replaceText('Y','J');
+    $('body').replaceText('C','Tj');
+    $('body').replaceText('KH','Ch');
   }
 });
