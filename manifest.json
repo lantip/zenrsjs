@@ -1,0 +1,25 @@
+{
+  "name": "JangTakMati",
+  "version": "1.0",
+  "description": "Extensi Chrome oentoek mengembalikan kedjajaan edjaan lama",
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["jquery.js","content.js"]
+  }],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Jang Tak Mati"
+  },
+  "icons": {
+    "16": "icons/icon_016.png",
+    "48": "icons/icon_048.png",
+    "128": "icons/icon_128.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "manifest_version": 2
+}
